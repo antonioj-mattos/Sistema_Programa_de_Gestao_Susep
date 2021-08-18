@@ -4,10 +4,6 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>..\Susep.SISRH.WebApi\Susep.SISRH.WebApi.xml</DocumentationFile>
-  </PropertyGroup>
-
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Connected Services\Application Insights\ConnectedService.json" />
   </ItemGroup>

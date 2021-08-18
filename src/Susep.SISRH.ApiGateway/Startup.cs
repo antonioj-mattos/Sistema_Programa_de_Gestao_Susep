@@ -16,16 +16,11 @@ namespace Susep.SISRH.ApiGateway
     public class Startup
     {
         public IConfiguration Configuration { get; }
-        public IConfigurationBuilder Builder { get; }
 
-        public Startup(IWebHostEnvironment env)
+        public Startup(IConfiguration configuration)
         {
-            Builder = new ConfigurationBuilder().SetBasePath(Path.Combine(env.ContentRootPath, "Settings"))
-                                                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true, true)
-                                                .AddJsonFile($"ocelot.{env.EnvironmentName}.json", true, true)
-                                                .AddEnvironmentVariables();
 
-            Configuration = Builder.Build();
+            Configuration = configuration;
         }
 
         public void ConfigureServices(IServiceCollection services)
@@ -52,7 +47,7 @@ namespace Susep.SISRH.ApiGateway
             services.AddOcelot(Configuration).AddCacheManager(it => it.WithDictionaryHandle());
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public async void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment() || env.IsEnvironment("Homolog"))
             {
@@ -67,7 +62,7 @@ namespace Susep.SISRH.ApiGateway
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseMiddleware<RequestResponseLoggingMiddleware>();
-            app.UseOcelot().Wait();
+            await app.UseOcelot();
         }
     }
 }

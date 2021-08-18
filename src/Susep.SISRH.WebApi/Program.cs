@@ -14,11 +14,6 @@ namespace Susep.SISRH.WebApi
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                   .ConfigureLogging(logging =>
-                   {
-                       logging.ClearProviders();
-                       logging.AddEventLog(new EventLogSettings() { Filter = (source, level) => level == LogLevel.Error });
-                   })
                    .UseStartup<Startup>();
     }
 }

@@ -7,12 +7,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.OpenApi.Models;
 using Susep.SISRH.Application.Configurations;
 using SUSEP.Framework.CoreFilters.Concrete;
-using System;
-using System.IO;
 
 namespace Susep.SISRH.WebApi
 {
@@ -20,23 +17,16 @@ namespace Susep.SISRH.WebApi
     {
         public IConfiguration Configuration { get; }
 
-        public IConfigurationBuilder Builder { get; }
+        public ILifetimeScope AutofacContainer { get; private set; }
 
-        public Startup(IWebHostEnvironment env)
+        public Startup(IConfiguration configuration)
         {
-            Builder = new ConfigurationBuilder().SetBasePath(Path.Combine(env.ContentRootPath, "Settings"))
-                                                .AddJsonFile($"connectionstrings.{env.EnvironmentName}.json", true, true)
-                                                .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true, true)
-                                                .AddJsonFile($"messagebroker.{env.EnvironmentName}.json", true, true)
-                                                .AddEnvironmentVariables();
-
-            Configuration = Builder.Build();
+            Configuration = configuration;
         }
 
-        public IServiceProvider ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers().AddNewtonsoftJson();
-            services.AddAutofac();
 
             services.AddApiVersioning(p =>
             {
@@ -77,16 +67,18 @@ namespace Susep.SISRH.WebApi
             });
 
             services.ConfigureOptions(Configuration);
+        }
 
-            container.Populate(services);
-            container.RegisterModule(new MediatorModuleConfiguration());
-            container.RegisterModule(new ApplicationModuleConfiguration(Configuration));
-
-            return new AutofacServiceProvider(container.Build());
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            builder.RegisterModule(new MediatorModuleConfiguration());
+            builder.RegisterModule(new ApplicationModuleConfiguration(Configuration));
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory log)
         {
+            AutofacContainer = app.ApplicationServices.GetAutofacRoot();
+
             if (env.IsDevelopment() || env.IsEnvironment("Homolog"))
             {
                 app.UseDeveloperExceptionPage();

@@ -1,7 +1,8 @@
-using Microsoft.AspNetCore;
+using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.EventLog;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+using System.IO;
 
 namespace Susep.SISRH.WebApi
 {
@@ -9,11 +10,25 @@ namespace Susep.SISRH.WebApi
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                   .UseStartup<Startup>();
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .UseServiceProviderFactory(new AutofacServiceProviderFactory())
+                .ConfigureAppConfiguration((hostingContext, config) =>
+                {
+                    var environmentName = hostingContext.HostingEnvironment.EnvironmentName;
+                    config
+                        .SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "Settings"))
+                        .AddJsonFile($"connectionStrings.{environmentName}.json", true, true)
+                        .AddJsonFile($"appsettings.{environmentName}.json", true, true)
+                        .AddJsonFile($"messagebroker.{environmentName}.json", true, true)
+                        .AddEnvironmentVariables();
+                })
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
     }
 }

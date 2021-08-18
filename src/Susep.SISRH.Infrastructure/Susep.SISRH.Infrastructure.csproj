@@ -18,10 +18,20 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="SUSEP.Framework.Data" Version="3.6.8" />
-    <PackageReference Include="SUSEP.Framework.Utils" Version="3.8.5" />
   </ItemGroup>
-  
+
+  <ItemGroup>
+    <Reference Include="SUSEP.Framework.Data">
+      <HintPath>..\Susep.Libs\SUSEP.Framework.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="SUSEP.Framework.Utils">
+      <HintPath>..\Susep.Libs\SUSEP.Framework.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="SUSEP.Framework.SeedWorks">
+      <HintPath>..\Susep.Libs\SUSEP.Framework.SeedWorks.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\Susep.SISRH.Domain\Susep.SISRH.Domain.csproj" />
   </ItemGroup>

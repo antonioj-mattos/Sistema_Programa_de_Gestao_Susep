@@ -65,7 +65,6 @@ namespace Susep.SISRH.WebApi
                 .AddResourceOwnerValidator<Application.Auth.ResourceOwnerPasswordValidator>();
             //.AddLdapUsers<OpenLdapAppUser>(Configuration.GetSection("ldapActiveDirectory"), UserStore.InMemory);
 
-            // Configurando o servi�o de documenta��o do Swagger
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1",
@@ -73,19 +72,9 @@ namespace Susep.SISRH.WebApi
                     {
                         Title = "Sistema de recursos humanos",
                         Version = "v1",
-                        Description = "API REST para manuten��o de dados de colaboradores da Susep",
+                        Description = "API REST para manutenção de dados de colaboradores da Susep",
                     });
-
-                string caminhoAplicacao =
-                    PlatformServices.Default.Application.ApplicationBasePath;
-                string nomeAplicacao =
-                    PlatformServices.Default.Application.ApplicationName;
-                string caminhoXmlDoc =
-                    Path.Combine(caminhoAplicacao, $"{nomeAplicacao}.xml");
-
-                c.IncludeXmlComments(caminhoXmlDoc);
             });
-
 
             services.ConfigureOptions(Configuration);
 
@@ -101,11 +90,13 @@ namespace Susep.SISRH.WebApi
             if (env.IsDevelopment() || env.IsEnvironment("Homolog"))
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sistema de corretores");
+                });
             }
-            else
-            {
-                app.UseHsts();
-            }
+            app.UseHsts();
 
             app.UseCors(option => option.AllowAnyOrigin()
                                  .AllowAnyMethod()
@@ -113,12 +104,7 @@ namespace Susep.SISRH.WebApi
 
             app.UseRouting();
             app.UseIdentityServer();
-            app.UseSwagger();
-            app.UseSwaggerUI(c =>
-            {
-                string swaggerJsonBasePath = string.IsNullOrWhiteSpace(c.RoutePrefix) ? "." : "..";
-                c.SwaggerEndpoint($"{swaggerJsonBasePath}/swagger/v1/swagger.json", "Sistema de corretores");
-            });
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

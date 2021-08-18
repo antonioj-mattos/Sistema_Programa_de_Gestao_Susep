@@ -16,25 +16,12 @@ using System.IO;
 
 namespace Susep.SISRH.WebApi
 {
-    /// <summary>
-    /// Classe que faz a configuração inicial da aplicação
-    /// </summary>
     public class Startup
     {
-        /// <summary>
-        /// Parametros de configuraçao do sistema
-        /// </summary>
         public IConfiguration Configuration { get; }
 
-        /// <summary>
-        /// Construtor das configuraçoes do sistema
-        /// </summary>
         public IConfigurationBuilder Builder { get; }
 
-        /// <summary>
-        /// Construtor da classe
-        /// </summary>
-        /// <param name="env"></param>
         public Startup(IWebHostEnvironment env)
         {
             Builder = new ConfigurationBuilder().SetBasePath(Path.Combine(env.ContentRootPath, "Settings"))
@@ -46,11 +33,6 @@ namespace Susep.SISRH.WebApi
             Configuration = Builder.Build();
         }
 
-        /// <summary>
-        /// Configura os serviços do sistema
-        /// </summary>
-        /// <param name="services"></param>
-        /// <returns></returns>
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddControllers().AddNewtonsoftJson();
@@ -81,9 +63,9 @@ namespace Susep.SISRH.WebApi
                 .AddInMemoryApiScopes(IdentityServerConfiguration.GetApiScopes())
                 .AddInMemoryApiResources(IdentityServerConfiguration.GetApiResources())
                 .AddResourceOwnerValidator<Application.Auth.ResourceOwnerPasswordValidator>();
-                //.AddLdapUsers<OpenLdapAppUser>(Configuration.GetSection("ldapActiveDirectory"), UserStore.InMemory);
+            //.AddLdapUsers<OpenLdapAppUser>(Configuration.GetSection("ldapActiveDirectory"), UserStore.InMemory);
 
-            // Configurando o serviço de documentação do Swagger
+            // Configurando o serviï¿½o de documentaï¿½ï¿½o do Swagger
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1",
@@ -91,7 +73,7 @@ namespace Susep.SISRH.WebApi
                     {
                         Title = "Sistema de recursos humanos",
                         Version = "v1",
-                        Description = "API REST para manutenção de dados de colaboradores da Susep",
+                        Description = "API REST para manutenï¿½ï¿½o de dados de colaboradores da Susep",
                     });
 
                 string caminhoAplicacao =
@@ -105,7 +87,7 @@ namespace Susep.SISRH.WebApi
             });
 
 
-            services.ConfigureOptions(Configuration);            
+            services.ConfigureOptions(Configuration);
 
             container.Populate(services);
             container.RegisterModule(new MediatorModuleConfiguration());
@@ -114,12 +96,6 @@ namespace Susep.SISRH.WebApi
             return new AutofacServiceProvider(container.Build());
         }
 
-        /// <summary>
-        /// Configura o sistema
-        /// </summary>
-        /// <param name="app"></param>
-        /// <param name="env"></param>
-        /// <param name="log"></param>
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory log)
         {
             if (env.IsDevelopment() || env.IsEnvironment("Homolog"))

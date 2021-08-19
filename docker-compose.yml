@@ -1,6 +1,62 @@
 version: "3.7"
 
 services:
+  traefik:
+    image: traefik:2.4
+    command: >
+      --providers.docker=true
+      --entrypoints.web.address=:8000
+      --entrypoints.web-secure.address=:8443
+      --providers.docker.exposedbydefault=false
+      --serversTransport.insecureSkipVerify=true
+    ports:
+      - 80:8000
+      - 443:8443
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.traefik.rule=Host(`traefik.api.localhost`)
+      - traefik.http.routers.traefik.entryPoints=web
+      - traefik.http.routers.traefik.tls=false
+      - traefik.http.services.traefik.loadbalancer.server.port=8080
+
+  webapp:
+    image: ${DOCKER_REGISTRY-}webapp
+    build:
+      context: .
+      dockerfile: src/Susep.SISRH.WebApp/Dockerfile
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.webapp.rule=(Host(`localhost`) && PathPrefix(`/`))
+      - traefik.http.routers.webapp.entrypoints=web
+      - traefik.http.routers.webapp.tls=false
+      - traefik.http.services.webapp.loadbalancer.server.port=80
+      - traefik.http.services.webapp.loadbalancer.server.scheme=http
+      - traefik.http.routers.webapp.middlewares=webapp_stripprefix
+      - traefik.http.middlewares.webapp_stripprefix.stripprefix.prefixes=/safe/sisgp/programagestao/app/
+
+  webapi:
+    image: ${DOCKER_REGISTRY-}webapi
+    build:
+      context: .
+      dockerfile: src/Susep.SISRH.WebApi/Dockerfile
+
+  apigw:
+    image: ${DOCKER_REGISTRY-}apigw
+    build:
+      context: .
+      dockerfile: src/Susep.SISRH.ApiGateway/Dockerfile
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.gateway.rule=(Host(`localhost`) && PathPrefix(`/gateway`))
+      - traefik.http.routers.gateway.entrypoints=web
+      - traefik.http.routers.gateway.tls=false
+      - traefik.http.services.gateway.loadbalancer.server.port=80
+      - traefik.http.services.gateway.loadbalancer.server.scheme=http
+      - traefik.http.routers.gateway.middlewares=gateway_stripprefix
+      - traefik.http.middlewares.gateway_stripprefix.stripprefix.prefixes=/gateway/
+
   db:
     image: mcr.microsoft.com/mssql/server:2019-latest
     environment:

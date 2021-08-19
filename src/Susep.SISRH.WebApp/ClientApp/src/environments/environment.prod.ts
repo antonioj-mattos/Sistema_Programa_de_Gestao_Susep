@@ -1,7 +1,7 @@
 export const environment = {
-  production: false,
-  identityUrl: "http://127.0.0.1:5004",
-  apiGatewayUrl: "http://127.0.0.1:5004",
+  production: true,
+  identityUrl: "/gateway/",
+  apiGatewayUrl: "/gateway/",
   modo: "normal", // 'avancado',
   valorPadraoTempoComparecimento: null, // 'avancado',
   valorPadraoTermosUso: null, // 'avancado',

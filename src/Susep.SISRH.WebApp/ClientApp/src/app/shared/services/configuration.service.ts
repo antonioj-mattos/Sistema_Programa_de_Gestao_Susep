@@ -1,10 +1,11 @@
-import { Injectable, isDevMode } from '@angular/core';
+import { Injectable, isDevMode } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { IConfiguration, TipoModo } from '../models/configuration.model';
-import { StorageService } from './storage.service';
-import { Subject } from 'rxjs';
-import { EnvironmentService } from './environment.service';
-import { ApplicationStateService } from './application.state.service';
+import { IConfiguration, TipoModo } from "../models/configuration.model";
+import { StorageService } from "./storage.service";
+import { Subject } from "rxjs";
+import { EnvironmentService } from "./environment.service";
+import { ApplicationStateService } from "./application.state.service";
+import { environment } from "./../../../environments/environment";
 
 /*
  * Serviço que obtém as configurações da aplicação definidas no servidor
@@ -76,8 +77,8 @@ export class ConfigurationService {
   }
 
   //Retorna a url para a página de autenticação
-  getIdentityUrl(): string {    
-    const url = this.storageService.retrieve('identityUrl');
+  getIdentityUrl(): string {
+    const url = environment.identityUrl;
     if (url) {
       return url.endsWith('/') ? url : `${url}/`;
     }
@@ -86,8 +87,7 @@ export class ConfigurationService {
 
   //Retorna a url para a página de autenticação
   getApiGatewayUrl(): string {
-
-    const url = this.storageService.retrieve('apiGatewayUrl');
+    const url = environment.apiGatewayUrl;
 
     if (url) {
       return url.endsWith('/') ? url : `${url}/`;
@@ -116,23 +116,23 @@ export class ConfigurationService {
 
   //Retorna o prazo padrão para comparecimento
   getTermosUso(): string {
-    const termosUso = this.storageService.retrieve('termosUso');
+    const termosUso = this.environment.valorPadraoTermosUso;
     return termosUso;
   }
 
   //Retorna o client id da aplicação
   getClientId(): string {
-    return this.storageService.retrieve('clientId');
+    return environment.client.id;
   }
 
   //Retorna o client secret da aplicação
   getClientSecret(): string {
-    return this.storageService.retrieve('clientSecret');
+    return environment.client.secret;
   }
 
   //Retorna o scope de autenticação da aplicação
   getClientAuthScope(): string {
-    return this.storageService.retrieve('clientAuthScope');
+    return environment.client.scope;
   }
 
   //Retorna o scope de autenticação da usuário

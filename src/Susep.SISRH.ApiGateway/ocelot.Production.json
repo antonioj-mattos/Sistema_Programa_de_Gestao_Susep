@@ -5,11 +5,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/swagger/{everything}",
+      "DownstreamPathTemplate": "/swagger/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -21,11 +21,11 @@
         "GET",
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/connect/{everything}",
+      "DownstreamPathTemplate": "/connect/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -36,11 +36,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/dominio/ModalidadeExecucao",
+      "DownstreamPathTemplate": "/api/v1/dominio/ModalidadeExecucao",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -55,11 +55,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/dominio/FormaCalculoTempoItemCatalogo",
+      "DownstreamPathTemplate": "/api/v1/dominio/FormaCalculoTempoItemCatalogo",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -80,11 +80,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/dominio/SituacaoPlanoTrabalho",
+      "DownstreamPathTemplate": "/api/v1/dominio/SituacaoPlanoTrabalho",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -105,11 +105,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/dominio/SituacaoPactoTrabalho",
+      "DownstreamPathTemplate": "/api/v1/dominio/SituacaoPactoTrabalho",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -130,11 +130,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/dominio/SituacaoAtividadePactoTrabalho",
+      "DownstreamPathTemplate": "/api/v1/dominio/SituacaoAtividadePactoTrabalho",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -155,11 +155,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/dominio/CriterioPerfilAtividadePlano",
+      "DownstreamPathTemplate": "/api/v1/dominio/CriterioPerfilAtividadePlano",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -180,11 +180,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/dominio/SituacaoCandidaturaPlanoTrabalho/Solicitada",
+      "DownstreamPathTemplate": "/api/v1/dominio/SituacaoCandidaturaPlanoTrabalho/Solicitada",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -205,11 +205,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/catalogo",
+      "DownstreamPathTemplate": "/api/v1/catalogo",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -226,11 +226,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/catalogo/{unidadeId}",
+      "DownstreamPathTemplate": "/api/v1/catalogo/{unidadeId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -247,11 +247,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/catalogo/{unidadeId}/itens",
+      "DownstreamPathTemplate": "/api/v1/catalogo/{unidadeId}/itens",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -268,11 +268,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/catalogo",
+      "DownstreamPathTemplate": "/api/v1/catalogo",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -289,11 +289,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/catalogo/{Catalogoid}",
+      "DownstreamPathTemplate": "/api/v1/catalogo/{Catalogoid}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -310,11 +310,11 @@
       "UpstreamHttpMethod": [
         "DELETE"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/catalogo/{Catalogoid}",
+      "DownstreamPathTemplate": "/api/v1/catalogo/{Catalogoid}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -331,11 +331,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/catalogo/{catalogoid}/item",
+      "DownstreamPathTemplate": "/api/v1/catalogo/{catalogoid}/item",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -352,11 +352,11 @@
       "UpstreamHttpMethod": [
         "DELETE"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/catalogo/{catalogoid}/item/{itemCatalogoId}",
+      "DownstreamPathTemplate": "/api/v1/catalogo/{catalogoid}/item/{itemCatalogoId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -373,11 +373,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/itemcatalogo",
+      "DownstreamPathTemplate": "/api/v1/itemcatalogo",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -394,11 +394,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/itemcatalogo/{itemCatalogoid}",
+      "DownstreamPathTemplate": "/api/v1/itemcatalogo/{itemCatalogoid}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -415,11 +415,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/itemcatalogo",
+      "DownstreamPathTemplate": "/api/v1/itemcatalogo",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -436,11 +436,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/itemcatalogo/{itemCatalogoid}",
+      "DownstreamPathTemplate": "/api/v1/itemcatalogo/{itemCatalogoid}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -457,11 +457,11 @@
       "UpstreamHttpMethod": [
         "DELETE"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/itemcatalogo/{itemCatalogoid}",
+      "DownstreamPathTemplate": "/api/v1/itemcatalogo/{itemCatalogoid}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -478,11 +478,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -499,11 +499,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/atual",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/atual",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -520,11 +520,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -541,11 +541,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/periodo",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/periodo",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -562,11 +562,11 @@
       "UpstreamHttpMethod": [
         "DELETE"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -583,11 +583,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -604,11 +604,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -625,11 +625,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/historico",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/historico",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -646,11 +646,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/enviarParaAceite",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/enviarParaAceite",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -667,11 +667,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/aceitar",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/aceitar",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -688,11 +688,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/rejeitar",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/rejeitar",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -709,11 +709,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/voltarParaRascunho",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/voltarParaRascunho",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -730,11 +730,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/iniciarExecucao",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/iniciarExecucao",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -751,11 +751,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/concluirExecucao",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/concluirExecucao",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -772,11 +772,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/avaliar",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/avaliar",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -793,11 +793,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -814,11 +814,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -835,11 +835,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades/{pactoTrabalhoAtividadeId}",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades/{pactoTrabalhoAtividadeId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -856,11 +856,11 @@
       "UpstreamHttpMethod": [
         "DELETE"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades/{pactoTrabalhoAtividadeId}",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades/{pactoTrabalhoAtividadeId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -877,11 +877,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades/{pactoTrabalhoAtividadeId}/todo",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades/{pactoTrabalhoAtividadeId}/todo",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -898,11 +898,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades/{pactoTrabalhoAtividadeId}/doing",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades/{pactoTrabalhoAtividadeId}/doing",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -919,11 +919,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades/{pactoTrabalhoAtividadeId}/done",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades/{pactoTrabalhoAtividadeId}/done",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -940,11 +940,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades/{pactoTrabalhoAtividadeId}/andamento",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades/{pactoTrabalhoAtividadeId}/andamento",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -961,11 +961,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades/{pactoTrabalhoAtividadeId}/avaliar",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/atividades/{pactoTrabalhoAtividadeId}/avaliar",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -982,11 +982,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/solicitacao",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/solicitacao",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1003,11 +1003,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/solicitacao/prazo",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/solicitacao/prazo",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1024,11 +1024,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/solicitacao/atividade",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/solicitacao/atividade",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1045,11 +1045,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/solicitacao/justificarestouroprazo",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/solicitacao/justificarestouroprazo",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1066,11 +1066,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/solicitacao/excluiratividade",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/solicitacao/excluiratividade",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1087,11 +1087,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/solicitacao/{pactoTrabalhoSolicitacaoId}/responder",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/solicitacao/{pactoTrabalhoSolicitacaoId}/responder",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1108,11 +1108,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pactotrabalho/{pactoTrabalhoid}/assuntosParaAssociar",
+      "DownstreamPathTemplate": "/api/v1/pactotrabalho/{pactoTrabalhoid}/assuntosParaAssociar",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1129,11 +1129,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pessoa",
+      "DownstreamPathTemplate": "/api/v1/pessoa",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1150,11 +1150,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pessoa/perfil",
+      "DownstreamPathTemplate": "/api/v1/pessoa/perfil",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1171,11 +1171,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pessoa/{pessoaId}",
+      "DownstreamPathTemplate": "/api/v1/pessoa/{pessoaId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1192,11 +1192,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pessoa/{pessoaId}/feriados",
+      "DownstreamPathTemplate": "/api/v1/pessoa/{pessoaId}/feriados",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1213,11 +1213,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/pessoa/compactotrabalho",
+      "DownstreamPathTemplate": "/api/v1/pessoa/compactotrabalho",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1234,11 +1234,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1255,11 +1255,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1276,11 +1276,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/atual",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/atual",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1297,11 +1297,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/habilitacao",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/habilitacao",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1318,11 +1318,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1339,11 +1339,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1360,11 +1360,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/pactosTrabalho",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/pactosTrabalho",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1381,11 +1381,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/historico",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/historico",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1402,11 +1402,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/situacao",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/situacao",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1423,11 +1423,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/atividades",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/atividades",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1444,11 +1444,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/atividades",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/atividades",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1465,11 +1465,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/atividades/{planoTrabalhoAtividadeId}",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/atividades/{planoTrabalhoAtividadeId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1486,11 +1486,11 @@
       "UpstreamHttpMethod": [
         "DELETE"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/atividades/{planoTrabalhoAtividadeId}",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/atividades/{planoTrabalhoAtividadeId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1507,11 +1507,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/atividades/candidato",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/atividades/candidato",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1528,11 +1528,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/atividades/{planoTrabalhoAtividadeId}/candidato",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/atividades/{planoTrabalhoAtividadeId}/candidato",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1549,11 +1549,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/atividades/{planoTrabalhoAtividadeId}/candidato",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/atividades/{planoTrabalhoAtividadeId}/candidato",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1570,11 +1570,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/atividades/{planoTrabalhoAtividadeId}/candidato/{planoTrabalhoAtividadeCandidatoId}",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/atividades/{planoTrabalhoAtividadeId}/candidato/{planoTrabalhoAtividadeCandidatoId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1591,11 +1591,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/pessoasModalidadesExecucao",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/pessoasModalidadesExecucao",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1612,11 +1612,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/metas",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/metas",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1633,11 +1633,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/metas",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/metas",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1654,11 +1654,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/metas/{planoTrabalhoMetaId}",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/metas/{planoTrabalhoMetaId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1675,11 +1675,11 @@
       "UpstreamHttpMethod": [
         "DELETE"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/metas/{planoTrabalhoMetaId}",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/metas/{planoTrabalhoMetaId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1696,11 +1696,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/reunioes",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/reunioes",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1717,11 +1717,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/reunioes",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/reunioes",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1738,11 +1738,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/reunioes/{planoTrabalhoReuniaoId}",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/reunioes/{planoTrabalhoReuniaoId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1759,11 +1759,11 @@
       "UpstreamHttpMethod": [
         "DELETE"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/reunioes/{planoTrabalhoReuniaoId}",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/reunioes/{planoTrabalhoReuniaoId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1780,11 +1780,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/custos",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/custos",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1801,11 +1801,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/custos",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/custos",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1822,11 +1822,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/custos/{planoTrabalhoCustoId}",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/custos/{planoTrabalhoCustoId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1843,11 +1843,11 @@
       "UpstreamHttpMethod": [
         "DELETE"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/custos/{planoTrabalhoCustoId}",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/custos/{planoTrabalhoCustoId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1864,11 +1864,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/objetos",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/objetos",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1885,11 +1885,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/objetosassociadosounaoatividadepacto",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/objetosassociadosounaoatividadepacto",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1906,11 +1906,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/objetos/{planoTrabalhoObjetoId}",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/objetos/{planoTrabalhoObjetoId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1927,11 +1927,11 @@
       "UpstreamHttpMethod": [
         "DELETE"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/objetos/{planoTrabalhoObjetoId}",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/objetos/{planoTrabalhoObjetoId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1948,11 +1948,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/objetos",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/objetos",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1969,11 +1969,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/planotrabalho/{planoTrabalhoid}/objetos/{planoTrabalhoObjetoId}",
+      "DownstreamPathTemplate": "/api/v1/planotrabalho/{planoTrabalhoid}/objetos/{planoTrabalhoObjetoId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -1990,11 +1990,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/unidade/ativas",
+      "DownstreamPathTemplate": "/api/v1/unidade/ativas",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2011,11 +2011,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/unidade/complanotrabalho",
+      "DownstreamPathTemplate": "/api/v1/unidade/complanotrabalho",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2032,11 +2032,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/unidade/semcatalogocadastrado",
+      "DownstreamPathTemplate": "/api/v1/unidade/semcatalogocadastrado",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2053,11 +2053,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/unidade/comcatalogocadastrado",
+      "DownstreamPathTemplate": "/api/v1/unidade/comcatalogocadastrado",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2074,11 +2074,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/unidade/{unidadeId}",
+      "DownstreamPathTemplate": "/api/v1/unidade/{unidadeId}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2095,11 +2095,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/unidade/{unidadeId}/modalidadeexecucao",
+      "DownstreamPathTemplate": "/api/v1/unidade/{unidadeId}/modalidadeexecucao",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2116,11 +2116,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/unidade/{unidadeId}/pessoas",
+      "DownstreamPathTemplate": "/api/v1/unidade/{unidadeId}/pessoas",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2137,11 +2137,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/assunto",
+      "DownstreamPathTemplate": "/api/v1/assunto",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2158,11 +2158,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/assunto",
+      "DownstreamPathTemplate": "/api/v1/assunto",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2179,11 +2179,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/assunto",
+      "DownstreamPathTemplate": "/api/v1/assunto",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2200,11 +2200,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/assunto/{id}",
+      "DownstreamPathTemplate": "/api/v1/assunto/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2221,11 +2221,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/assunto/texto",
+      "DownstreamPathTemplate": "/api/v1/assunto/texto",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2242,11 +2242,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/objeto",
+      "DownstreamPathTemplate": "/api/v1/objeto",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2263,11 +2263,11 @@
       "UpstreamHttpMethod": [
         "POST"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/objeto",
+      "DownstreamPathTemplate": "/api/v1/objeto",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2284,11 +2284,11 @@
       "UpstreamHttpMethod": [
         "PUT"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/objeto",
+      "DownstreamPathTemplate": "/api/v1/objeto",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2305,11 +2305,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/objeto/{id}",
+      "DownstreamPathTemplate": "/api/v1/objeto/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2326,11 +2326,11 @@
       "UpstreamHttpMethod": [
         "GET"
       ],
-      "DownstreamPathTemplate": "/SISGP/api/api/v1/objeto/texto",
+      "DownstreamPathTemplate": "/api/v1/objeto/texto",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "caminhointernoservicos",
+          "Host": "webapi",
           "Port": 80
         }
       ],
@@ -2345,7 +2345,7 @@
   ],
   "GlobalConfiguration": {
     "ServiceDiscoveryProvider": {
-      "BaseUrl": "https://sitedoorgao/sisgp/gateway"
+      "BaseUrl": "http://apigw"
     }
   }
 }
